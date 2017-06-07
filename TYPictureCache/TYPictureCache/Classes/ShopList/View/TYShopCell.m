@@ -3,7 +3,7 @@
 //  TYPictureCache
 //
 //  Created by 马天野 on 2017/6/7.
-//  Copyright © 2017年 MTY. All rights reserved.
+//  Copyright © 2017年 MTY. All rights reserved.                             
 //
 
 #import "TYShopCell.h"
@@ -29,6 +29,20 @@
         _images = [NSMutableDictionary dictionary];
     }
     return _images;
+}
+
+- (NSMutableDictionary *)operations {
+    if (nil == _operations) {
+        _operations = [NSMutableDictionary dictionary];
+    }
+    return _operations;
+}
+
+- (NSOperationQueue *)queue {
+    if (nil == _queue) {
+        _queue = [[NSOperationQueue alloc] init];
+    }
+    return _queue;
 }
 
 #pragma mark - cellModel 的 set 方法
@@ -92,15 +106,16 @@
                         return;
                     }
                     
+                    // 保存图片到内存缓存中
+                    [self.images setObject:image forKey:self.cellModel.img];
+                    // 保存数据到沙盒缓存中
+                    [data writeToFile:fullPath atomically:YES];
+                    
                     // 主线程设置图片
                     [[NSOperationQueue mainQueue] addOperationWithBlock:^{
                         self.shopImg.image = image;
                     }];
                     
-                    // 保存图片到内存缓存中
-                    [self.images setObject:image forKey:self.cellModel.img];
-                    // 保存数据到沙盒缓存中
-                    [data writeToFile:fullPath atomically:YES];
                     
                 }];
                 
@@ -120,6 +135,7 @@
     NSString *fileName = [self.cellModel.img lastPathComponent];
     // 缓存文件夹路径
     NSString *cachePath = [NSSearchPathForDirectoriesInDomains(NSCachesDirectory, NSUserDomainMask, YES) lastObject];
+    NSLog(@"%@",cachePath);
     // 拼接文件全路径
     NSString *fullPath = [cachePath stringByAppendingPathComponent:fileName];
     return fullPath;
