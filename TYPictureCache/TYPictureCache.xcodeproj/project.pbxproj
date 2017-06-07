@@ -14,7 +14,11 @@
 		4C97F46B1EE7F9DF00A4F686 /* TYTabBarViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4C97F46A1EE7F9DF00A4F686 /* TYTabBarViewController.m */; };
 		4C97F46F1EE7FA5800A4F686 /* TYHomeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4C97F46D1EE7FA5800A4F686 /* TYHomeViewController.m */; };
 		4C97F4701EE7FA5800A4F686 /* TYHomeViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 4C97F46E1EE7FA5800A4F686 /* TYHomeViewController.xib */; };
-		4C97F4731EE7FBB000A4F686 /* TYPictureListVc.m in Sources */ = {isa = PBXBuildFile; fileRef = 4C97F4721EE7FBB000A4F686 /* TYPictureListVc.m */; };
+		4C97F4751EE7FC3100A4F686 /* shop.plist in Resources */ = {isa = PBXBuildFile; fileRef = 4C97F4741EE7FC3100A4F686 /* shop.plist */; };
+		4C97F48F1EE7FEB000A4F686 /* TYShopListVc.m in Sources */ = {isa = PBXBuildFile; fileRef = 4C97F4871EE7FEAF00A4F686 /* TYShopListVc.m */; };
+		4C97F4901EE7FEB000A4F686 /* TYShopModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 4C97F48A1EE7FEB000A4F686 /* TYShopModel.m */; };
+		4C97F4911EE7FEB000A4F686 /* TYShopCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 4C97F48D1EE7FEB000A4F686 /* TYShopCell.m */; };
+		4C97F4921EE7FEB000A4F686 /* TYShopCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 4C97F48E1EE7FEB000A4F686 /* TYShopCell.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -30,8 +34,14 @@
 		4C97F46C1EE7FA5800A4F686 /* TYHomeViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TYHomeViewController.h; sourceTree = "<group>"; };
 		4C97F46D1EE7FA5800A4F686 /* TYHomeViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TYHomeViewController.m; sourceTree = "<group>"; };
 		4C97F46E1EE7FA5800A4F686 /* TYHomeViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = TYHomeViewController.xib; sourceTree = "<group>"; };
-		4C97F4711EE7FBB000A4F686 /* TYPictureListVc.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TYPictureListVc.h; sourceTree = "<group>"; };
-		4C97F4721EE7FBB000A4F686 /* TYPictureListVc.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TYPictureListVc.m; sourceTree = "<group>"; };
+		4C97F4741EE7FC3100A4F686 /* shop.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = shop.plist; sourceTree = "<group>"; };
+		4C97F4861EE7FEAF00A4F686 /* TYShopListVc.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TYShopListVc.h; sourceTree = "<group>"; };
+		4C97F4871EE7FEAF00A4F686 /* TYShopListVc.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TYShopListVc.m; sourceTree = "<group>"; };
+		4C97F4891EE7FEB000A4F686 /* TYShopModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TYShopModel.h; sourceTree = "<group>"; };
+		4C97F48A1EE7FEB000A4F686 /* TYShopModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TYShopModel.m; sourceTree = "<group>"; };
+		4C97F48C1EE7FEB000A4F686 /* TYShopCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TYShopCell.h; sourceTree = "<group>"; };
+		4C97F48D1EE7FEB000A4F686 /* TYShopCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TYShopCell.m; sourceTree = "<group>"; };
+		4C97F48E1EE7FEB000A4F686 /* TYShopCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = TYShopCell.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -84,10 +94,11 @@
 		4C97F4581EE7F9A700A4F686 /* Classes */ = {
 			isa = PBXGroup;
 			children = (
+				4C97F4741EE7FC3100A4F686 /* shop.plist */,
 				4C97F4611EE7F9A700A4F686 /* Other */,
 				4C97F45D1EE7F9A700A4F686 /* Main */,
 				4C97F4591EE7F9A700A4F686 /* Home */,
-				4C97F4621EE7F9A700A4F686 /* PictureList */,
+				4C97F4841EE7FEAF00A4F686 /* ShopList */,
 			);
 			path = Classes;
 			sourceTree = "<group>";
@@ -168,35 +179,40 @@
 			path = Other;
 			sourceTree = "<group>";
 		};
-		4C97F4621EE7F9A700A4F686 /* PictureList */ = {
+		4C97F4841EE7FEAF00A4F686 /* ShopList */ = {
 			isa = PBXGroup;
 			children = (
-				4C97F4631EE7F9A700A4F686 /* Controller */,
-				4C97F4641EE7F9A700A4F686 /* Model */,
-				4C97F4651EE7F9A700A4F686 /* View */,
+				4C97F4851EE7FEAF00A4F686 /* Controller */,
+				4C97F4881EE7FEB000A4F686 /* Model */,
+				4C97F48B1EE7FEB000A4F686 /* View */,
 			);
-			path = PictureList;
+			path = ShopList;
 			sourceTree = "<group>";
 		};
-		4C97F4631EE7F9A700A4F686 /* Controller */ = {
+		4C97F4851EE7FEAF00A4F686 /* Controller */ = {
 			isa = PBXGroup;
 			children = (
-				4C97F4711EE7FBB000A4F686 /* TYPictureListVc.h */,
-				4C97F4721EE7FBB000A4F686 /* TYPictureListVc.m */,
+				4C97F4861EE7FEAF00A4F686 /* TYShopListVc.h */,
+				4C97F4871EE7FEAF00A4F686 /* TYShopListVc.m */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
 		};
-		4C97F4641EE7F9A700A4F686 /* Model */ = {
+		4C97F4881EE7FEB000A4F686 /* Model */ = {
 			isa = PBXGroup;
 			children = (
+				4C97F4891EE7FEB000A4F686 /* TYShopModel.h */,
+				4C97F48A1EE7FEB000A4F686 /* TYShopModel.m */,
 			);
 			path = Model;
 			sourceTree = "<group>";
 		};
-		4C97F4651EE7F9A700A4F686 /* View */ = {
+		4C97F48B1EE7FEB000A4F686 /* View */ = {
 			isa = PBXGroup;
 			children = (
+				4C97F48C1EE7FEB000A4F686 /* TYShopCell.h */,
+				4C97F48D1EE7FEB000A4F686 /* TYShopCell.m */,
+				4C97F48E1EE7FEB000A4F686 /* TYShopCell.xib */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -260,8 +276,10 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				4C97F4921EE7FEB000A4F686 /* TYShopCell.xib in Resources */,
 				4C97F4701EE7FA5800A4F686 /* TYHomeViewController.xib in Resources */,
 				4C97F4511EE7F94D00A4F686 /* LaunchScreen.storyboard in Resources */,
+				4C97F4751EE7FC3100A4F686 /* shop.plist in Resources */,
 				4C97F44E1EE7F94D00A4F686 /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -273,9 +291,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				4C97F4731EE7FBB000A4F686 /* TYPictureListVc.m in Sources */,
+				4C97F4911EE7FEB000A4F686 /* TYShopCell.m in Sources */,
 				4C97F46B1EE7F9DF00A4F686 /* TYTabBarViewController.m in Sources */,
+				4C97F4901EE7FEB000A4F686 /* TYShopModel.m in Sources */,
 				4C97F4431EE7F94D00A4F686 /* main.m in Sources */,
+				4C97F48F1EE7FEB000A4F686 /* TYShopListVc.m in Sources */,
 				4C97F46F1EE7FA5800A4F686 /* TYHomeViewController.m in Sources */,
 				4C97F4681EE7F9C300A4F686 /* AppDelegate.m in Sources */,
 			);

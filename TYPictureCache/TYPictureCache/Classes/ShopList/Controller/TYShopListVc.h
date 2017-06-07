@@ -1,5 +1,5 @@
 //
-//  TYPictureListVc.h
+//  TYShopListVc.h
 //  TYPictureCache
 //
 //  Created by 马天野 on 2017/6/7.
@@ -8,6 +8,6 @@
 
 #import <UIKit/UIKit.h>
 
-@interface TYPictureListVc : UITableViewController
+@interface TYShopListVc : UITableViewController
 
 @end

@@ -7,7 +7,7 @@
 //
 
 #import "TYHomeViewController.h"
-#import "TYPictureListVc.h"
+#import "TYShopListVc.h"
 
 @interface TYHomeViewController ()
 
@@ -23,8 +23,8 @@
 #pragma mark - PushToPictureList
 
 - (IBAction)pushToPictureList:(id)sender {
-    TYPictureListVc *pictureListVc = [[TYPictureListVc alloc] init];
-    [self.navigationController pushViewController:pictureListVc animated:YES];
+    TYShopListVc *shopListVc = [[TYShopListVc alloc] init];
+    [self.navigationController pushViewController:shopListVc animated:YES];
 }
 
 
