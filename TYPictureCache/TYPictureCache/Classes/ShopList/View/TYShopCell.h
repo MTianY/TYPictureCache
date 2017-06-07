@@ -13,4 +13,17 @@
 
 @property (nonatomic, strong) TYShopModel *cellModel;
 
+/**
+ * 记录内存缓存图片.
+ * key: 图片的url(img)
+ * 暴露出来是因为后面在内存溢出时要清空内存缓存.
+ */
+@property (nonatomic, strong) NSMutableDictionary *images;
+
+/**
+ * 缓存操作
+ * key : 图片的url(img)
+ */
+@property (nonatomic, strong) NSMutableDictionary *operations;
+
 @end

@@ -15,6 +15,7 @@ static NSString *const cellID = @"cellID";
 @interface TYShopListVc ()
 
 @property (nonatomic, strong) NSArray *shops;
+@property (nonatomic, strong) TYShopCell *cell;
 
 @end
 
@@ -44,7 +45,8 @@ static NSString *const cellID = @"cellID";
 
 - (void)didReceiveMemoryWarning {
     [super didReceiveMemoryWarning];
-    
+    [self.cell.operations removeAllObjects];
+    [self.cell.images removeAllObjects];
 }
 
 #pragma mark - UITableViewDataSoure
@@ -55,6 +57,7 @@ static NSString *const cellID = @"cellID";
 
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath {
     TYShopCell *cell = [tableView dequeueReusableCellWithIdentifier:cellID forIndexPath:indexPath];
+    self.cell = cell;
     cell.cellModel = self.shops[indexPath.row];
     return cell;
 }
